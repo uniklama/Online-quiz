@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Quiz Website</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+        }
+
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 1.5rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 0.5rem;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #3a71b1;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 3rem 2rem;
+            background-color: white;
+            margin: 2rem auto;
+            max-width: 900px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        main h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .quiz-question {
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .quiz-question p {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .quiz-question input[type="radio"] {
+            margin-right: 0.5rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="submit"] {
+            background-color: #4a90e2;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #333;
+        }
+
+        footer {
+            background-color: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            width: 100%;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                padding: 1.5rem;
+                margin: 1rem;
+            }
+
+            nav ul li {
+                margin-right: 1rem;
+            }
+
+            main h1 {
+                font-size: 2rem;
+            }
+
+            .quiz-question p {
+                font-size: 1rem;
+            }
+
+            input[type="submit"] {
+                padding: 0.5rem 1rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="quiz">
+            <h1>Take the Quiz</h1>
+            <form id="quizForm">
+                <div class="quiz-question">
+                    <p>1. What is the capital of France?</p>
+                    <input type="radio" name="q1" value="A"> A. London<br>
+                    <input type="radio" name="q1" value="B"> B. Paris<br>
+                    <input type="radio" name="q1" value="C"> C. Rome<br>
+                </div>
+                <div class="quiz-question">
+                    <p>2. What is 2 + 2?</p>
+                    <input type="radio" name="q2" value="A"> A. 3<br>
+                    <input type="radio" name="q2" value="B"> B. 4<br>
+                    <input type="radio" name="q2" value="C"> C. 5<br>
+                </div>
+                <div class="quiz-question">
+                    <p>3. Which ocean is the largest?</p>
+                    <input type="radio" name="q3" value="A"> A. Atlantic Ocean<br>
+                    <input type="radio" name="q3" value="B"> B. Indian Ocean<br>
+                    <input type="radio" name="q3" value="C"> C. Pacific Ocean<br>
+                </div>
+                <div class="quiz-question">
+                    <p>4. Who developed the theory of relativity?</p>
+                    <input type="radio" name="q4" value="A"> A. Albert Einstein<br>
+                    <input type="radio" name="q4" value="B"> B. Isaac Newton<br>
+                    <input type="radio" name="q4" value="C"> C. Galileo Galilei<br>
+                </div>
+                <div class="quiz-question">
+                    <p>5. What is the chemical symbol for water?</p>
+                    <input type="radio" name="q5" value="A"> A. CO2<br>
+                    <input type="radio" name="q5" value="B"> B. H2O<br>
+                    <input type="radio" name="q5" value="C"> C. O2<br>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Quiz Website. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
